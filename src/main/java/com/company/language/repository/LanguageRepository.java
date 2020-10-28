@@ -1,4 +1,4 @@
-package com.solarwinds.language.repository;
+package com.company.language.repository;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import com.solarwinds.language.entity.Language;
+import com.company.language.entity.Language;
 
 @Repository
 public interface LanguageRepository extends JpaRepository<Language, Integer> {

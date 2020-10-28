@@ -1,4 +1,4 @@
-package com.solarwinds.language.entity;
+package com.company.language.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

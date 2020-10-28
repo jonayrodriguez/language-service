@@ -1,4 +1,4 @@
-package com.solarwinds.language.model;
+package com.company.language.model;
 
 import javax.validation.constraints.NotBlank;
 

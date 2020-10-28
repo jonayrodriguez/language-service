@@ -1,4 +1,4 @@
-package com.solarwinds.language.controller;
+package com.company.language.controller;
 
 import java.util.List;
 import java.util.Locale;
@@ -19,9 +19,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.solarwinds.language.model.LanguageDTO;
-import com.solarwinds.language.model.LanguageRequest;
-import com.solarwinds.language.service.ILanguageService;
+import com.company.language.model.LanguageDTO;
+import com.company.language.model.LanguageRequest;
+import com.company.language.service.ILanguageService;
 
 @RestController
 @RequestMapping("api/v1/languages")

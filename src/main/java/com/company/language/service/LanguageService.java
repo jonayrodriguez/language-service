@@ -1,4 +1,4 @@
-package com.solarwinds.language.service;
+package com.company.language.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,10 +11,10 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 
-import com.solarwinds.language.entity.Language;
-import com.solarwinds.language.model.LanguageDTO;
-import com.solarwinds.language.model.LanguageRequest;
-import com.solarwinds.language.repository.LanguageRepository;
+import com.company.language.entity.Language;
+import com.company.language.model.LanguageDTO;
+import com.company.language.model.LanguageRequest;
+import com.company.language.repository.LanguageRepository;
 
 @Component
 public class LanguageService implements ILanguageService {

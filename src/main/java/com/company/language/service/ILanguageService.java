@@ -1,10 +1,10 @@
-package com.solarwinds.language.service;
+package com.company.language.service;
 
 import java.util.List;
 import java.util.Locale;
 
-import com.solarwinds.language.model.LanguageDTO;
-import com.solarwinds.language.model.LanguageRequest;
+import com.company.language.model.LanguageDTO;
+import com.company.language.model.LanguageRequest;
 
 public interface ILanguageService {
 	
