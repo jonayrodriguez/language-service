@@ -76,7 +76,7 @@ If you have `cURL` or some API client tools (e.g. [Postman](https://www.getpostm
 more complex scenarios:
 
 ```shell
-# An example of retrieving the translated language a user: GET /api/v1/languages
+# An example of retrieving the translated language: GET /api/v1/languages
 curl -X GET -H "Content-Type: application/json" -H "Accept-Language: en-UK" -d http://localhost:8080/api/v1/languages/backup?key=home.w*
 # should return 200 and a list of languages
 ```
