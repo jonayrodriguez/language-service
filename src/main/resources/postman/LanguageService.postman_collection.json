@@ -1,0 +1,228 @@
+{
+	"info": {
+		"_postman_id": "4f9a0584-3dd2-4b43-b68c-720f719f3f8a",
+		"name": "LanguageService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "UpdateLanguages",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true,
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-UK",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "utf-8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\"languages\":[\r\n    {\r\n        \"key\": \"home.welcome\",\r\n        \"content\": \"Welcome1\"\r\n    }\r\n ]\r\n }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/v1/languages/backup",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"languages",
+						"backup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findLanguages",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true,
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-UK",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "utf-8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/v1/languages/backup?key=home.w*",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"languages",
+						"backup"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "home.w*"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateLanguages",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true,
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-UK",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "utf-8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\"languages\":[\r\n    {\r\n        \"key\": \"home.welcome.v1\",\r\n        \"content\": \"Welcome1\"\r\n    }\r\n ]\r\n }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/v1/languages/backup",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"languages",
+						"backup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteLanguages",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true,
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-UK",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "utf-8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/v1/languages/backup?key=home.welcome.v1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"languages",
+						"backup"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "home.welcome.v1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
